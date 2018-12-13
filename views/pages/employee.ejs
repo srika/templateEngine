@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <% include ../partials/head %>
+    </head>
+    <body class="container">
+        <header>
+                <% include ../partials/header %>
+        </header>
+
+        <main>
+                
+                <div class="jumbotron bg-2">
+                        <h2> Employees Details</h2>
+
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Employee ID</td>
+                                    <td>
+                                        <%= empId %>
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td>Employee Name</td>
+                                    <td>
+                                        <%= empName %>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Employee Designation</td>
+                                    <td>
+                                        <%= empDesignation %>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Employee Location</td>
+                                    <td>
+                                        <%= empLocation %>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Employee Salary</td>
+                                    <td>
+                                        <%= empSalary %>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                </div>
+        </main>
+
+        <footer>
+                <% include ../partials/footer %>
+        </footer>
+    </body>
+</html>

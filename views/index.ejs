@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello from EJS Application</h1>
+    <p>This is my first configuration with EJS as template engine</p>
+    <h2>EJS Variables</h2>
+    <div> <%= message %></div>
+    <div> <%= 5+5 %></div>
+    
+    <h2>Conditional Constructs</h2>
+    <div>
+    <% if(message == 'Hello World'){ %>
+        <p>Good</p>
+    <% } %>
+    </div>
+
+    <h2>Looping Constructs</h2>
+    <div>
+        <ul>
+            <% for(var i=0;i<people.length;i++){ %>
+                <li> <%= people[i] %></li>
+            <% } %>
+        </ul>
+    </div>
+
+    <h2> EJS loop through array of objects</h2>
+    <div>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tbody>
+                <% for(var i=0;i<data.length;i++){ %>
+                    <tr> 
+                        <td><%= data[i].id %></td>
+                        <td><%= data[i].name %></td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
